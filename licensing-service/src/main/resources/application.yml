@@ -1,1 +1,10 @@
-
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      base-path: /
+  health:
+    diskspace:
+      enabled: false
