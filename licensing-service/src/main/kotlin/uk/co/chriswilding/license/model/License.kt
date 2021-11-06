@@ -1,5 +1,7 @@
 package uk.co.chriswilding.license.model
 
+import org.springframework.hateoas.RepresentationModel;
+
 data class License(
     val id: Int,
     val licenseId: String,
@@ -7,4 +9,4 @@ data class License(
     val organisationId: String,
     val productName: String,
     val licenseType: String,
-)
+): RepresentationModel<License>()
